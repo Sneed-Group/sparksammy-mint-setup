@@ -19,7 +19,6 @@ sudo systemctl enable --now cron
 
 #Install NVM and Ollama
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-curl -fsSL https://ollama.com/install.sh | sh
 source ~/.bashrc
 
 nvm install --lts
