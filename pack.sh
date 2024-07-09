@@ -38,7 +38,6 @@ sudo chmod +x /usr/bin/scrcpy.AppImage
 sudo wget https://github.com/Sneed-Group/SneedScan/raw/main/sneedscan.sh
 sudo chmod +x sneedscan.sh
 
-
 sudo wget https://github.com/Sneed-Group/roblox-scrcpy/raw/main/roblox-scrcpy.sh
 sudo chmod +x /usr/bin/roblox-scrcpy.sh
 
@@ -47,8 +46,6 @@ sudo chmod +x /usr/bin/roblox-scrcpy-orset.sh
 
 cd ~
 
-chmod +x sneedscan.sh
-sudo cp sneedscan.sh /usr/bin
 sudo crontab -l > scancron
 sudo echo "0 */6 * * * sneedscan.sh &" >> scancron
 sudo crontab scancron
