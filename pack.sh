@@ -24,8 +24,9 @@ source ~/.bashrc
 nvm install --lts
 nvm use --lts
 
+
 # Install flatpaks
-flatpak install librewolf shotcut ferdium geforce krita libreoffice freetube spotify com.stremio.Stremio vscodium vinegar com.obsproject.Studio bottles localsend steam heroic discord vlc
+flatpak install librewolf shotcut ferdium geforce krita libreoffice freetube spotify com.stremio.Stremio vscodium vinegar com.obsproject.Studio bottles localsend steam heroic discord vlc com.protonvpn.www
 
 
 ## Setup scripts/SneedScan, finish up.
