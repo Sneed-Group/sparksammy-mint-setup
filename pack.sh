@@ -2,12 +2,12 @@ cd ~
 
 sudo dpkg --add-architecture i386 
 
-sudo apt remove -y celluloid hypnotix thunderbird firefox libreoffice* hexchat rhythmbox transmission
+sudo apt remove -y celluloid hypnotix thunderbird firefox mintchat libreoffice* rhythmbox transmission
 
 sudo mkdir -pm755 /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 
-sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
 
 sudo apt update
 
@@ -24,6 +24,7 @@ source ~/.bashrc
 nvm install --lts
 nvm use --lts
 
+curl -fsSL https://ollama.com/install.sh | sh
 
 # Install flatpaks
 flatpak install librewolf shotcut ferdium geforce krita libreoffice freetube spotify com.stremio.Stremio vscodium vinegar com.obsproject.Studio bottles localsend steam heroic discord vlc com.protonvpn.www
